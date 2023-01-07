@@ -76,3 +76,13 @@ h2 {
 .number3{
   font-weight: 500;
 }
+
+.loading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-style: italic;
+  color: rgb(6, 156, 23);
+  margin-top: 20%;
+}
