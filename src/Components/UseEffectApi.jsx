@@ -4,8 +4,13 @@ const UseEffectApi = () => {
     const [user , setUser]=useState([]);
 
     const getUsers = async() =>{
-        const responce=await fetch("https://api.github.com/users");
-        setUser(await responce.json());
+        try{
+            const responce=await fetch("https://api.github.com/users");
+            setUser(await responce.json());
+        }catch(error){
+            console.log(error)
+        }
+        
     }
 
     useEffect(()=>{
